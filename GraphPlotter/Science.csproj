@@ -1,0 +1,474 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C7CCF2B-A3AF-4035-88FA-2E449321BC81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VietGraph</RootNamespace>
+    <AssemblyName>VietGraph</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>VietGraph.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>C:\Users\LY PHUC THANH\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnhVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnhVan.Designer.cs">
+      <DependentUpon>AnhVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTAnhVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTAnhVan.Designer.cs">
+      <DependentUpon>BTAnhVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTHoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTHoaHoc.Designer.cs">
+      <DependentUpon>BTHoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTSinhHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTSinhHoc.Designer.cs">
+      <DependentUpon>BTSinhHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTToan.Designer.cs">
+      <DependentUpon>BTToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BTVatLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTVatLy.Designer.cs">
+      <DependentUpon>BTVatLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cal.Designer.cs">
+      <DependentUpon>Cal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChonMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonMon.Designer.cs">
+      <DependentUpon>ChonMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose.Designer.cs">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemDH.Designer.cs">
+      <DependentUpon>DiemDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expression.cs" />
+    <Compile Include="ExpressionHelper.cs" />
+    <Compile Include="ExpressionPlotter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExpressionPlotter.Designer.cs">
+      <DependentUpon>ExpressionPlotter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaiThua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaiThua.Designer.cs">
+      <DependentUpon>GiaiThua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemTn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemTn.Designer.cs">
+      <DependentUpon>DiemTn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hoahoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoahoc.Designer.cs">
+      <DependentUpon>Hoahoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEvaluatable.cs" />
+    <Compile Include="Introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Draw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Draw.Designer.cs">
+      <DependentUpon>Draw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhaiCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhaiCan.Designer.cs">
+      <DependentUpon>KhaiCan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LamBai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LamBai.Designer.cs">
+      <DependentUpon>LamBai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logarit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logarit.Designer.cs">
+      <DependentUpon>Logarit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuongGiac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuongGiac.Designer.cs">
+      <DependentUpon>LuongGiac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LuyThua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LuyThua.Designer.cs">
+      <DependentUpon>LuyThua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinhhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinhhoc.Designer.cs">
+      <DependentUpon>Sinhhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toan.Designer.cs">
+      <DependentUpon>Toan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Van.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Van.Designer.cs">
+      <DependentUpon>Van.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vatly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vatly.Designer.cs">
+      <DependentUpon>Vatly.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnhVan.resx">
+      <DependentUpon>AnhVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTAnhVan.resx">
+      <DependentUpon>BTAnhVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTHoaHoc.resx">
+      <DependentUpon>BTHoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTSinhHoc.resx">
+      <DependentUpon>BTSinhHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTToan.resx">
+      <DependentUpon>BTToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTVatLy.resx">
+      <DependentUpon>BTVatLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cal.resx">
+      <DependentUpon>Cal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChonMon.resx">
+      <DependentUpon>ChonMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose.resx">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemDH.resx">
+      <DependentUpon>DiemDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaiThua.resx">
+      <DependentUpon>GiaiThua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemTn.resx">
+      <DependentUpon>DiemTn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoahoc.resx">
+      <DependentUpon>Hoahoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Draw.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Draw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhaiCan.resx">
+      <DependentUpon>KhaiCan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LamBai.resx">
+      <DependentUpon>LamBai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logarit.resx">
+      <DependentUpon>Logarit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuongGiac.resx">
+      <DependentUpon>LuongGiac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LuyThua.resx">
+      <DependentUpon>LuyThua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PTB1A2.resx">
+      <DependentUpon>PTB1A2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PTB1A3.resx">
+      <DependentUpon>PTB1A3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PTB2.resx">
+      <DependentUpon>PTB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinhhoc.resx">
+      <DependentUpon>Sinhhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemBotBieuThuc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThemBotBieuThuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinDoThi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThongTinDoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Toan.resx">
+      <DependentUpon>Toan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Van.resx">
+      <DependentUpon>Van.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vatly.resx">
+      <DependentUpon>Vatly.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PTB1A2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PTB1A2.Designer.cs">
+      <DependentUpon>PTB1A2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PTB1A3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PTB1A3.Designer.cs">
+      <DependentUpon>PTB1A3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PTB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PTB2.Designer.cs">
+      <DependentUpon>PTB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemBotBieuThuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemBotBieuThuc.Designer.cs">
+      <DependentUpon>ThemBotBieuThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinDoThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinDoThi.Designer.cs">
+      <DependentUpon>ThongTinDoThi.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appgraph.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\origin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polarDown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polarup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangular.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn X.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoomin Y.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoomin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut X.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut Y.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoomout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\range.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\VietGraph.ico" />
+    <Content Include="VietGraph.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
